@@ -1,0 +1,142 @@
+#members{
+    padding: 40px 5%;
+}
+
+.section-members{
+    color: rgb(255, 100, 20);
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 40px;
+    text-shadow: 0px 15px 10px rgba(0, 0, 0, 0.4);
+}
+
+.members-containers{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    gap: 2rem;
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.member-card{
+    --card-radius: 0.938rem;
+    background: white;
+    border-radius: var(--card-radius);
+    overflow: hidden;
+    box-shadow:0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.member-card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+
+.member-img{
+    position: relative;
+    width: 100%;
+    padding-top: 100%;
+    overflow: hidden;
+}
+
+.member-img img{
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   object-position: center top;
+   transition: transform 0.3s ease;
+
+}
+
+.member-card:hover .member-img img{
+    transform: scale(1.1);
+}
+
+.member-info{
+    padding: 1.5rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.member-name{
+    font-size: 1.5rem;
+    color: #E25822;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.member-role{
+    font-size: 1.1rem;
+    color: #666;
+    padding-bottom: 1rem;
+    font-style: italic;
+    border-bottom: 2px solid rgba(226, 88, 34, 0.2);
+    border-top: 1rem;
+}
+
+.member-description{
+    color: #666;
+    line-height: 1.6;
+    font-size: 0.95rem;
+    padding: 10px;
+}
+
+.member-description p{
+    margin-bottom: 1rem;
+}
+
+.member-description p:last-child{
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 1024px) {
+    .members-containers {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .members-containers {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1.5rem;
+    }
+
+    .member-info {
+        padding: 1.25rem;
+    }
+
+    .member-name {
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .members-containers {
+        grid-template-columns: 1fr;
+        padding: 0 10px;
+    }
+
+    .member-info {
+        padding: 1rem;
+    }
+
+    .member-name {
+        font-size: 1.2rem;
+    }
+
+    .member-role {
+        font-size: 1rem;
+    }
+}

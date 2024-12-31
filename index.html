@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <title>Tributo Paramore</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <header>
+      <nav id="navbar">
+        <i class="fa-solid fa-headphones-simple" id="nav-logo">
+          <a id="nav-logo-link" rel="home" href="#home"> PARAMORE</a>
+        </i>
+        <div class="menu-sanduiche">
+          <i class="fas fa-bars"></i>
+        </div>
+
+        <ul id="nav-list">
+          <li class="nav__item active"><a href="#about">História</a></li>
+          <li class="nav__item"><a href="#albuns">Discografia</a></li>
+          <li class="nav__item"><a href="#members">Membros</a></li>
+        </ul>
+        <a href="https://paramore.net/" target="_blank" class="btn__default">Site Oficial</a>
+      </nav>
+    </header>
+
+    <main id="content">
+      <section id="home">
+        <div id="shape"></div>
+
+        <div id="cta">
+          <h1 class="title"> Sobre a 
+            <span>banda!</span></h1>
+          <p class="description"> <span>Paramore</span> é uma banda de Rock alternativo originalmente formada no ano de 2004, em Franklin, no estado americano do Tenessee.  A banda inicialmente foi formada por Josh Farro (Guitarra),  Zac farro (Bateria), Hayley Williams (Vocal), e Jeremy Davis (Baixo) quando ainda eram adolescentes. </p>
+          <div id="cta-buttons">
+            <a href="#about" class="btn__default"> Saiba mais</a>
+          </div>
+        </div>
+        
+        <div id="banner">
+          <div class="slide">
+            <img class="slide-img active" src="img\band.jpg" alt="Banda">
+            <img class="slide-img" src="img\Hayley.jpg" alt="Hayley Williams">
+            <img class="slide-img" src="img\band3.jpg" alt="Apresentação">
+
+            <button class="slide-btn prev"><i class="fas fa-chevron-left"></i></button>
+            <button class="slide-btn next"><i class="fas fa-chevron-right"></i></button>
+
+            <div class="slide-dots">
+              <span class="dot active"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about">
+        <h2 class="section-title">História</h2>
+        <div class="about-container">
+          <div class="about-text">
+            <p class="about-paragraph">
+              O Paramore iniciou sua jornada em 2004, em Franklin, Tennessee. Formado inicialmente por Hayley Williams (vocal), Josh Farro (guitarra), Zac Farro (bateria) e Jeremy Davis (baixo), a banda rapidamente se destacou no cenário do rock alternativo.
+            </p>
+            <p class="about-paragraph">
+              Em 2005, lançaram seu álbum de estreia "All We Know Is Falling", que estabeleceu as bases do som característico da banda. Foi com "Riot!" em 2007 que alcançaram reconhecimento mundial, impulsionados por hits como "Misery Business" e "That's What You Get".
+            </p>
+            <p class="about-paragraph">
+              A trajetória da banda foi marcada por mudanças significativas. Em 2010, os irmãos Josh e Zac Farro deixaram o grupo. O Paramore continuou como um trio com Hayley, Jeremy e Taylor York, lançando seu aclamado álbum autointitulado em 2013.
+            </p>
+            <p class="about-paragraph">
+              Em 2015, Jeremy Davis deixou a banda, e em 2017, Zac Farro retornou, marcando o início de uma nova era. O álbum "After Laughter" mostrou uma evolução sonora significativa, incorporando elementos de new wave e pop rock.
+            </p>
+            <img src="img\group_paramore.webp" alt="banda Paramore">
+          </div>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-content">
+                <h3>2004</h3>
+                <p>Formação da banda em Franklin, Tennessee</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-content">
+                <h3>2005</h3>
+                <p>Lançamento do primeiro álbum "All We Know Is Falling"</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-content">
+                <h3>2007</h3>
+                <p>Lançamento de "Riot!" e sucesso internacional</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-content">
+                <h3>2009</h3>
+                <p>Lançamento de "Brand New Eyes"</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-content">
+                <h3>2013</h3>
+                <p>Lançamento do álbum "Paramore"</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-content">
+                <h3>2017</h3>
+                <p>Lançamento de "After Laughter" e retorno de Zac Farro</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-content">
+                <h3>2023</h3>
+                <p>Lançamento de "This Is Why"</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section id="albuns">
+        <h2 class="section-albuns"> Álbuns Lançados</h2>
+        <h3 class="subtitle-albuns"> Discos gravados em estúdio:</h3>
+        <div id="albuns-banner">
+          <div class="albumBanner">
+            <div class="play-album">
+              <i class="fa-solid fa-play-circle"></i>
+            </div>
+            <img src="img\albuns\all we know is falling.jpg" class="album-image" alt="AllWeKnowIsFalling">
+            <div class="albumcontent">
+              <h3 class="album-name">All We Know is Falling</h3>
+              <figcaption class="album-description"> Lorem ipsum dolor sit amet consectetur adipisicing elit.</figcaption>
+              <div class="album-note">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="album-price">
+                <h4>Info Price: </h4>
+                <button class="btn__default">
+                  <i class="fa-solid fa-basket-shopping"></i>
+                </button>
+              </div>
+             </div> 
+          </div>
+          <div class="albumBanner">
+            <div class="play-album">
+              <i class=" fa-solid fa-play-circle"></i>
+            </div>
+            <img src="img\albuns\riot.jpg" class="album-image" alt="AllWeKnowIsFalling">
+            <div class="albumcontent">
+              <h3 class="album-name">Riot</h3>
+              <figcaption class="album-description"> Lorem ipsum dolor sit amet consectetur adipisicing elit.</figcaption>
+              <div class="album-note">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="album-price">
+                <h4>Info price</h4>
+                <button class="btn__default">
+                  <i class="fa-solid fa-basket-shopping"></i>
+                </button>
+              </div>
+             </div> 
+          </div> 
+          <div class="albumBanner">
+            <div class="play-album">
+              <i class=" fa-solid fa-play-circle"></i>
+            </div>
+            <img src="img\albuns\The Final Riot.jpg" class="album-image" alt="AllWeKnowIsFalling">
+            <div class="albumcontent">
+              <h3 class="album-name">The Final Riot</h3>
+              <figcaption class="album-description"> Lorem ipsum dolor sit amet consectetur adipisicing elit.</figcaption>
+              <div class="album-note">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="album-price">
+                <h4>Info price</h4>
+                <button class="btn__default">
+                  <i class="fa-solid fa-basket-shopping"></i>
+                </button>
+              </div>
+             </div> 
+          </div>
+          <div class="albumBanner">
+            <div class="play-album">
+              <i class=" fa-solid fa-play-circle"></i>
+            </div>
+            <img src="img\albuns\brand new eyes.jpg" class="album-image" alt="AllWeKnowIsFalling">
+            <div class="albumcontent">
+              <h3 class="album-name">Brand New Eyes</h3>
+              <figcaption class="album-description"> Lorem ipsum dolor sit amet consectetur adipisicing elit.</figcaption>
+              <div class="album-note">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="album-price">
+                <h4>Info price</h4>
+                <button class="btn__default">
+                  <i class="fa-solid fa-basket-shopping"></i>
+                </button>
+              </div>
+             </div> 
+          </div>
+          <div class="albumBanner">
+            <div class="play-album">
+              <i class=" fa-solid fa-play-circle"></i>
+            </div>
+            <img src="img\albuns\Paramore.jpg" class="album-image" alt="AllWeKnowIsFalling">
+            <div class="albumcontent">
+              <h3 class="album-name">Paramore</h3>
+              <figcaption class="album-description"> Lorem ipsum dolor sit amet consectetur adipisicing elit.</figcaption>
+              <div class="album-note">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="album-price">
+                <h4>Info price</h4>
+                <button class="btn__default">
+                  <i class="fa-solid fa-basket-shopping"></i>
+                </button>
+              </div>
+             </div> 
+          </div>
+          <div class="albumBanner">
+            <div class="play-album">
+              <i class=" fa-solid fa-play-circle"></i>
+            </div>
+            <img src="img\albuns\after laughter.jpg" class="album-image" alt="AllWeKnowIsFalling">
+            <div class="albumcontent">
+              <h3 class="album-name">After Laughter</h3>
+              <figcaption class="album-description"> Lorem ipsum dolor sit amet consectetur adipisicing elit.</figcaption>
+              <div class="album-note">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="album-price">
+                <h4>Info price</h4>
+                <button class="btn__default">
+                  <i class="fa-solid fa-basket-shopping"></i>
+                </button>
+              </div>
+             </div> 
+          </div>
+          <div class="albumBanner">
+            <div class="play-album">
+              <i class=" fa-solid fa-play-circle"></i>
+            </div>
+            <img src="img\albuns\This is why.jpg" class="album-image" alt="AllWeKnowIsFalling">
+            <div class="albumcontent">
+              <h3 class="album-name">This Is Why</h3>
+              <figcaption class="album-description"> Lorem ipsum dolor sit amet consectetur adipisicing elit.</figcaption>
+              <div class="album-note">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="album-price">
+                <h4>Info price</h4>
+                <button class="btn__default">
+                  <i class="fa-solid fa-basket-shopping"></i>
+                </button>
+              </div>
+             </div> 
+        </div>
+      </section>
+      
+      <section id="members">
+        <h2 class="section-members">Membros Atuais</h2>
+       
+        <div class="members-containers">
+          <div class="member-card">
+            <div class="member-img">
+              <img src="img\Members\hayley2.jpg" alt="Hayley Williams">
+            </div>
+            <div class="member-info">
+              <h3 class="member-name">Haylay Willians</h3>
+              <p class="member-role">Vocal Principal</p>
+            </div>
+            <div class="member-description">
+              <p>Hayley Williams nasceu em 27 de dezembro de 1988, em Meridian, Mississippi. Ela é a vocalista principal e compositora do Paramore desde sua formação em 2004. Com sua voz poderosa e presença de palco carismática, Hayley se tornou um ícone do rock alternativo.</p>
+              <p>Além de seu trabalho com o Paramore, ela também lançou projetos solo, incluindo os álbuns "Petals for Armor" (2020) e "FLOWERS for VASES/descansos" (2021).</p>
+            </div>
+          </div>
+          
+          <div class="member-card">
+            <div class="member-img">
+              <img src="img\Members\Taylor York.jpg" alt="Taylor York">
+            </div>
+            <div class="member-info">
+              <h3 class="member-name">Taylor York</h3>
+              <p class="member-role">Guitarrista</p>
+            </div>
+            <div class="member-description">
+              <p>Taylor York, nascido em 17 de dezembro de 1989, é o guitarrista do Paramore. Ele se juntou oficialmente à banda em 2009, mas já tocava como músico de apoio desde 2007. Taylor é conhecido por suas habilidades de composição e seus riffs distintivos.</p>
+              <p>Ele tem sido uma parte fundamental na evolução do som da banda, contribuindo significativamente para a composição em álbuns como "Brand New Eyes", "Paramore", "After Laughter" e "This Is Why".</p>
+            </div>
+          </div>
+          
+          <div class="member-card">
+            <div class="member-img">
+              <img src="img\Members\Zac Farro.jpg" alt="Zac Farro">
+            </div>
+            <div class="member-info">
+              <h3 class="member-name">Zac Farro</h3>
+              <p class="member-role">Baterista</p>
+            </div>
+            <div class="member-description">
+              <p>Zac Farro, nascido em 4 de junho de 1990, é o baterista do Paramore. Ele foi um dos membros fundadores da banda em 2004, saiu em 2010 e retornou em 2017. Seu estilo de bateria dinâmico e criativo é uma parte essencial do som do Paramore.</p>
+              <p>Além do Paramore, Zac também tem seu próprio projeto musical chamado HalfNoise, onde atua como vocalista e multi-instrumentista.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer> 
+      
+      <div id="footer-items">
+        <p><span>&copy</span> 2024 Criado por Jonas Nogueira.</p>
+        <div class="social-media-btn">
+          <a href="">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+          <a href="">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script src="js/scriptBanner.js"></script>
+    <script src="js/scriptNav.js"></script>
+    <script src="js/scriptCard.js"></script>
+    <script src="js/scriptMenu.js"></script>
+  </body>
+</html>
