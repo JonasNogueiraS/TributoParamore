@@ -1,51 +1,41 @@
-const membersCards = document.querySelectorAll('.member-card');
+document.addEventListener('DOMContentLoaded', () => {
+    const membersCards = document.querySelectorAll('.member-card');
 
-function isMobileDevice() {
-    return window.matchMedia('(max-width: 768px)').matches;
-}
+    function isMobileDevice() {
+        return window.matchMedia('(max-width: 768px)').matches;
+    }
 
+    function applyGrayscaleEffect() {
+        if (!isMobileDevice()) {
+            membersCards.forEach(card => {
+                card.classList.add('grayscale-effect');
+            });
+        } else {
+            membersCards.forEach(card => {
+                card.classList.remove('grayscale-effect');
+                card.classList.remove('active');
+            });
+        }
+    }
 
-window.addEventListener('load', () => {
     if (!isMobileDevice()) {
         membersCards.forEach(card => {
-            card.style.filter = 'grayscale(100%)';
-            card.style.transition = 'all 0.3s ease-in-out';
-        });
-    }
-});
-
-
-if (!isMobileDevice()) {
-    membersCards.forEach(card => {
-        card.addEventListener('mouseover', function() {
-            membersCards.forEach(otherCards => {
-                otherCards.classList.remove('active');
-                otherCards.style.filter = 'grayscale(100%)';
-                otherCards.style.transform = 'scale(1)';
-                otherCards.style.transition = 'all 0.3s ease-in-out';
+            card.addEventListener('mouseover', function() {
+                membersCards.forEach(otherCard => {
+                    if (otherCard !== this) {
+                        otherCard.classList.remove('active');
+                    }
+                });
+                this.classList.add('active');
             });
-            this.classList.add('active');
-            this.style.filter = 'grayscale(0)';
-            this.style.transform = 'scale(1.10)';
-        });
 
-        card.addEventListener('mouseout', function() {
-            card.style.filter = 'grayscale(100%)';
-            card.style.transform = 'scale(1)';
-        });
-    });
-}
-
-
-window.addEventListener('resize', () => {
-    if (isMobileDevice()) {
-        membersCards.forEach(card => {
-            card.style.filter = 'none';
-            card.style.transform = 'none';
-        });
-    } else {
-        membersCards.forEach(card => {
-            card.style.filter = 'grayscale(100%)';
+            card.addEventListener('mouseout', function() {
+                this.classList.remove('active');
+            });
         });
     }
+
+    window.addEventListener('resize', applyGrayscaleEffect);
+
+    applyGrayscaleEffect();
 });

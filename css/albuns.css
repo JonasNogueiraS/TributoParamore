@@ -18,7 +18,7 @@
 
 }
 
-.albumcontent{
+.album-card__content{
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -27,7 +27,7 @@
    
 }
 
-.albumBanner{
+.album-card{
     --card-padding: 1rem;
     position: relative;
     display: flex;
@@ -44,12 +44,12 @@
     will-change: transform;
 }
 
-.albumBanner:hover{
+.album-card:hover{
     transform: translateY(-0.625rem) scale(1.05);
     box-shadow: 0px 1rem 2rem rgba(0, 0, 0, 0.5 );
 }
 
-.play-album{
+.album-card__play-button{
     position: absolute;
     background-color: #e9a209;
     display: flex;
@@ -66,32 +66,32 @@
     cursor: pointer;
 }
 
-.album-image{
+.album-card__image{
     width: 160px;
     height: 160px;
     object-fit: cover;
     border-radius: 10px;
 }
 
-.album-description{
+.album-card__description{
     color: #434343;
     text-align: center;
     margin-bottom: 15px
 
 }
 
-.album-note{
+.album-card__note{
    display: flex;
    flex-direction: row;
    justify-content: center;
    margin-bottom: 15px;
    cursor:pointer;
 }
-.album-note i{
+.album-card__note i{
     color: #e9a209;
 }
 
-.album-price{
+.album-card__price{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -99,7 +99,7 @@
 }
 
 @media screen and (max-width: 1200px){
-    .albumBanner{
+    .album-card{
         width: 450px;
     }
     #albuns-banner{
@@ -108,16 +108,16 @@
 }
 
 @media screen and ( max-width: 992px){
-    .albumBanner{
+    .album-card{
         width: 400px;
         padding: 25px;
     }
 
-    .album-image{
+    .album-card__image{
         width: 180px;
         height: 180px;
     }
-    .play-album{
+    .album-card__play-button{
         width: 60px;
         height: 60px;
         font-size: 1.3rem;
@@ -128,19 +128,19 @@
         min-width: 100%;
     }
 
-    .albumBanner {
+    .album-card {
         width: 100%;
         max-width: 350px;
         flex-direction: column;
         padding: 20px;
     }
 
-    .album-image {
+    .album-card__image {
         width: 160px;
         height: 160px;
     }
 
-    .albumcontent {
+    .album-card__content {
         text-align: center;
     }
 }
@@ -151,38 +151,38 @@
         gap: 20px;
     }
 
-    .albumBanner {
+    .album-card {
         padding: 15px;
         gap: 15px;
     }
 
-    .album-image {
+    .album-card__image {
         width: 140px;
         height: 140px;
     }
 
-    .play-album {
+    .album-card__play-button {
         width: 50px;
         height: 50px;
         font-size: 1.2rem;
     }
 
-    .album-price {
+    .album-card__price {
         gap: 10px;
     }
 }
 
 @media screen and (max-width: 320px) {
-    .albumBanner {
+    .album-card {
         padding: 10px;
     }
 
-    .album-image {
+    .album-card__image {
         width: 120px;
         height: 120px;
     }
 
-    .play-album {
+    .album-card__play-button {
         width: 40px;
         height: 40px;
         font-size: 1rem;

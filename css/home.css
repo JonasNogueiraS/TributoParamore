@@ -34,18 +34,18 @@
     font-weight: 700;
 }
 
-#cta-buttons{
+.cta__buttons{
     display: flex;
     flex-wrap: wrap;
 }
 
-#cta-buttons a{
+.cta__buttons a{
   text-decoration: none;
   color: #1d1d1d;
   transition: box-shadow .3s ease;
 }
 
-#cta-buttons a:hover{
+.cta__buttons a:hover{
     box-shadow: 8px 12px 12px 8px rgba(0, 0, 0, 0.5 );
 }
 
@@ -68,7 +68,7 @@
     
 }
 
-.slide-img{
+.slide__image{
     position: absolute;
     width: 100%;
     height: 100%;
@@ -78,11 +78,11 @@
     background-color: rgba(0, 0, 0, 0.1);
 }
 
-.slide-img.active{
+.slide__image.active{
     opacity: 1;
 }
 
-.slide-btn{
+.slide__button{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -103,7 +103,7 @@
     right: 10px;
 }
 
-.slide-dots{
+.slide__dots{
     position: absolute;
     bottom: 20px;
     left: 50%;
@@ -141,7 +141,7 @@
         width: 100%;
     }
 
-    #cta-buttons{
+    .cta__buttons{
         justify-content: center;
     }
 
