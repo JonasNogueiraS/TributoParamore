@@ -3,10 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <title>Tributo Paramore</title>
     <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/albuns.css" />
+    <link rel="stylesheet" href="css/members.css" />
+    <link rel="stylesheet" href="css/footer.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
@@ -15,16 +19,16 @@
         <i class="fa-solid fa-headphones-simple" id="nav-logo">
           <a id="nav-logo-link" rel="home" href="#home"> PARAMORE</a>
         </i>
-        <div class="menu-sanduiche">
+        <div class="menu-toggle">
           <i class="fas fa-bars"></i>
         </div>
 
         <ul id="nav-list">
-          <li class="nav__item active"><a href="#about">História</a></li>
-          <li class="nav__item"><a href="#albuns">Discografia</a></li>
-          <li class="nav__item"><a href="#members">Membros</a></li>
+          <li class="nav-item active"><a href="#about">História</a></li>
+          <li class="nav-item"><a href="#albuns">Discografia</a></li>
+          <li class="nav-item"><a href="#members">Membros</a></li>
         </ul>
-        <a href="https://paramore.net/" target="_blank" class="btn__default">Site Oficial</a>
+        <a href="https://paramore.net/" target="_blank" rel="noopener noreferrer" class="btn">Site Oficial</a>
       </nav>
     </header>
 
@@ -36,21 +40,21 @@
           <h1 class="title"> Sobre a 
             <span>banda!</span></h1>
           <p class="description"> <span>Paramore</span> é uma banda de Rock alternativo originalmente formada no ano de 2004, em Franklin, no estado americano do Tenessee.  A banda inicialmente foi formada por Josh Farro (Guitarra),  Zac farro (Bateria), Hayley Williams (Vocal), e Jeremy Davis (Baixo) quando ainda eram adolescentes. </p>
-          <div id="cta-buttons">
-            <a href="#about" class="btn__default"> Saiba mais</a>
+          <div class="cta__buttons">
+            <a href="#about" class="btn"> Saiba mais</a>
           </div>
         </div>
         
         <div id="banner">
           <div class="slide">
-            <img class="slide-img active" src="img\band.jpg" alt="Banda">
-            <img class="slide-img" src="img\Hayley.jpg" alt="Hayley Williams">
-            <img class="slide-img" src="img\band3.jpg" alt="Apresentação">
+            <img class="slide__image active" src="img\band.jpg" alt="Banda">
+            <img class="slide__image" src="img\Hayley.jpg" alt="Hayley Williams">
+            <img class="slide__image" src="img\band3.jpg" alt="Apresentação">
 
-            <button class="slide-btn prev"><i class="fas fa-chevron-left"></i></button>
-            <button class="slide-btn next"><i class="fas fa-chevron-right"></i></button>
+            <button class="slide__button prev"><i class="fas fa-chevron-left"></i></button>
+            <button class="slide__button next"><i class="fas fa-chevron-right"></i></button>
 
-            <div class="slide-dots">
+            <div class="slide__dots">
               <span class="dot active"></span>
               <span class="dot"></span>
               <span class="dot"></span>
@@ -60,7 +64,7 @@
       </section>
 
       <section id="about">
-        <h2 class="section-title">História</h2>
+        <h2 class="section__title">História</h2>
         <div class="about-container">
           <div class="about-text">
             <p class="about-paragraph">
@@ -125,217 +129,218 @@
       </section>
       
       <section id="albuns">
-        <h2 class="section-albuns"> Álbuns Lançados</h2>
-        <h3 class="subtitle-albuns"> Discos gravados em estúdio:</h3>
+        <h2 class="section__title"> Álbuns Lançados</h2>
+        <h3 class="section__subtitle"> Discos gravados em estúdio:</h3>
         <div id="albuns-banner">
-          <div class="albumBanner">
-            <div class="play-album">
+          <figure class="album-card">
+            <div class="album-card__play-button">
               <i class="fa-solid fa-play-circle"></i>
             </div>
-            <img src="img\albuns\all we know is falling.jpg" class="album-image" alt="AllWeKnowIsFalling">
-            <div class="albumcontent">
-              <h3 class="album-name">All We Know is Falling</h3>
-              <figcaption class="album-description"> Primeiro álbum da banda, lançado em 2005. Foi gravado em apenas três semanas.</figcaption>
-              <div class="album-note">
+            <img src="img\albuns\all we know is falling.jpg" class="album-card__image" alt="Capa do álbum All We Know Is Falling">
+            <div class="album-card__content">
+              <h3 class="album-card__name">All We Know is Falling</h3>
+              <figcaption class="album-card__description"> Primeiro álbum da banda, lançado em 2005. Foi gravado em apenas três semanas.</figcaption>
+              <div class="album-card__note">
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
               </div>
-              <div class="album-price">
+              <div class="album-card__price">
                 <h4>Info Price: </h4>
-                <button class="btn__default">
+                <button class="btn">
                   <i class="fa-solid fa-basket-shopping"></i>
                 </button>
               </div>
              </div> 
-          </div>
-          <div class="albumBanner">
-            <div class="play-album">
+          </figure>
+          <figure class="album-card">
+            <div class="album-card__play-button">
               <i class=" fa-solid fa-play-circle"></i>
             </div>
-            <img src="img\albuns\riot.jpg" class="album-image" alt="AllWeKnowIsFalling">
-            <div class="albumcontent">
-              <h3 class="album-name">Riot</h3>
-              <figcaption class="album-description"> Segundo álbum de estúdio da banda. Lançado no dia 12 de junho de 2007 e contendo onze faixas inéditas.</figcaption>
-              <div class="album-note">
+            <img src="img\albuns\riot.jpg" class="album-card__image" alt="Capa do álbum Riot">
+            <div class="album-card__content">
+              <h3 class="album-card__name">Riot</h3>
+              <figcaption class="album-card__description"> Segundo álbum de estúdio da banda. Lançado no dia 12 de junho de 2007 e contendo onze faixas inéditas.</figcaption>
+              <div class="album-card__note">
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
               </div>
-              <div class="album-price">
+              <div class="album-card__price">
                 <h4>Info price</h4>
-                <button class="btn__default">
+                <button class="btn">
                   <i class="fa-solid fa-basket-shopping"></i>
                 </button>
               </div>
              </div> 
-          </div> 
-          <div class="albumBanner">
-            <div class="play-album">
+          </figure>
+          <figure class="album-card">
+            <div class="album-card__play-button">
               <i class=" fa-solid fa-play-circle"></i>
             </div>
-            <img src="img\albuns\The Final Riot.jpg" class="album-image" alt="AllWeKnowIsFalling">
-            <div class="albumcontent">
-              <h3 class="album-name">The Final Riot</h3>
-              <figcaption class="album-description"> É oficialmente o segundo álbum ao vivo da banda foi lançado em 25 de novembro de 2008 com um DVD bônus.</figcaption>
-              <div class="album-note">
+            <img src="img\albuns\The Final Riot.jpg" class="album-card__image" alt="Capa do álbum The Final Riot">
+            <div class="album-card__content">
+              <h3 class="album-card__name">The Final Riot</h3>
+              <figcaption class="album-card__description"> É oficialmente o segundo álbum ao vivo da banda foi lançado em 25 de novembro de 2008 com um DVD bônus.</figcaption>
+              <div class="album-card__note">
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
               </div>
-              <div class="album-price">
+              <div class="album-card__price">
                 <h4>Info price</h4>
-                <button class="btn__default">
+                <button class="btn">
                   <i class="fa-solid fa-basket-shopping"></i>
                 </button>
               </div>
              </div> 
-          </div>
-          <div class="albumBanner">
-            <div class="play-album">
+          </figure>
+          <figure class="album-card">
+            <div class="album-card__play-button">
               <i class=" fa-solid fa-play-circle"></i>
             </div>
-            <img src="img\albuns\brand new eyes.jpg" class="album-image" alt="AllWeKnowIsFalling">
-            <div class="albumcontent">
-              <h3 class="album-name">Brand New Eyes</h3>
-              <figcaption class="album-description"> Terceiro álbum de estúdio da banda, lançado em 29 de setembro de 2009. Gravado no Lightning Sound Studios em Hidden Hills, na Califórnia.</figcaption>
-              <div class="album-note">
+            <img src="img\albuns\brand new eyes.jpg" class="album-card__image" alt="Capa do álbum Brand New Eyes">
+            <div class="album-card__content">
+              <h3 class="album-card__name">Brand New Eyes</h3>
+              <figcaption class="album-card__description"> Terceiro álbum de estúdio da banda, lançado em 29 de setembro de 2009. Gravado no Lightning Sound Studios em Hidden Hills, na Califórnia.</figcaption>
+              <div class="album-card__note">
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
               </div>
-              <div class="album-price">
+              <div class="album-card__price">
                 <h4>Info price</h4>
-                <button class="btn__default">
+                <button class="btn">
                   <i class="fa-solid fa-basket-shopping"></i>
                 </button>
               </div>
              </div> 
-          </div>
-          <div class="albumBanner">
-            <div class="play-album">
+          </figure>
+          <figure class="album-card">
+            <div class="album-card__play-button">
               <i class=" fa-solid fa-play-circle"></i>
             </div>
-            <img src="img\albuns\Paramore.jpg" class="album-image" alt="AllWeKnowIsFalling">
-            <div class="albumcontent">
-              <h3 class="album-name">Paramore</h3>
-              <figcaption class="album-description"> Quarto álbum de estúdio da banda. Lançado dia 9 de abril de 2013, é o primeiro disco sem a participação de Zac e Josh Farro.</figcaption>
-              <div class="album-note">
+            <img src="img\albuns\Paramore.jpg" class="album-card__image" alt="Capa do álbum Paramore">
+            <div class="album-card__content">
+              <h3 class="album-card__name">Paramore</h3>
+              <figcaption class="album-card__description"> Quarto álbum de estúdio da banda. Lançado dia 9 de abril de 2013, é o primeiro disco sem a participação de Zac e Josh Farro.</figcaption>
+              <div class="album-card__note">
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
               </div>
-              <div class="album-price">
+              <div class="album-card__price">
                 <h4>Info price</h4>
-                <button class="btn__default">
+                <button class="btn">
                   <i class="fa-solid fa-basket-shopping"></i>
                 </button>
               </div>
              </div> 
-          </div>
-          <div class="albumBanner">
-            <div class="play-album">
+          </figure>
+          <figure class="album-card">
+            <div class="album-card__play-button">
               <i class=" fa-solid fa-play-circle"></i>
             </div>
-            <img src="img\albuns\after laughter.jpg" class="album-image" alt="AllWeKnowIsFalling">
-            <div class="albumcontent">
-              <h3 class="album-name">After Laughter</h3>
-              <figcaption class="album-description"> Quinto álbum de estúdio, foi lançado em 12 de maio de 2017. Foi o primeiro lançamento desde o retorno do baterista Zac Farro, que havia deixado a banda.</figcaption>
-              <div class="album-note">
+            <img src="img\albuns\after laughter.jpg" class="album-card__image" alt="Capa do álbum After Laughter">
+            <div class="album-card__content">
+              <h3 class="album-card__name">After Laughter</h3>
+              <figcaption class="album-card__description"> Quinto álbum de estúdio, foi lançado em 12 de maio de 2017. Foi o primeiro lançamento desde o retorno do baterista Zac Farro, que havia deixado a banda.</figcaption>
+              <div class="album-card__note">
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
               </div>
-              <div class="album-price">
+              <div class="album-card__price">
                 <h4>Info price</h4>
-                <button class="btn__default">
+                <button class="btn">
                   <i class="fa-solid fa-basket-shopping"></i>
                 </button>
               </div>
              </div> 
-          </div>
-          <div class="albumBanner">
-            <div class="play-album">
+          </figure>
+          <figure class="album-card">
+            <div class="album-card__play-button">
               <i class=" fa-solid fa-play-circle"></i>
             </div>
-            <img src="img\albuns\This is why.jpg" class="album-image" alt="AllWeKnowIsFalling">
-            <div class="albumcontent">
-              <h3 class="album-name">This Is Why</h3>
-              <figcaption class="album-description"> Sexto álbum de estúdio da banda, lançado em 10 de fevereiro de 2023. Foi o primeiro álbum da banda em quase seis anos, sendo o primeiro a apresentar a mesma formação de seu antecessor.</figcaption>
-              <div class="album-note">
+            <img src="img\albuns\This is why.jpg" class="album-card__image" alt="Capa do álbum This Is Why">
+            <div class="album-card__content">
+              <h3 class="album-card__name">This Is Why</h3>
+              <figcaption class="album-card__description"> Sexto álbum de estúdio da banda, lançado em 10 de fevereiro de 2023. Foi o primeiro álbum da banda em quase seis anos, sendo o primeiro a apresentar a mesma formação de seu antecessor.</figcaption>
+              <div class="album-card__note">
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
               </div>
-              <div class="album-price">
+              <div class="album-card__price">
                 <h4>Info price</h4>
-                <button class="btn__default">
+                <button class="btn">
                   <i class="fa-solid fa-basket-shopping"></i>
                 </button>
               </div>
              </div> 
+          </figure>
         </div>
       </section>
       
       <section id="members">
-        <h2 class="section-members">Membros Atuais</h2>
+        <h2 class="section__title">Membros Atuais</h2>
        
-        <div class="members-containers">
-          <div class="member-card">
-            <div class="member-img">
+        <div class="member-cards">
+          <figure class="member-card">
+            <div class="member-card__image-container">
               <img src="img\Members\hayley2.jpg" alt="Hayley Williams">
             </div>
-            <div class="member-info">
-              <h3 class="member-name">Haylay Willians</h3>
-              <p class="member-role">Vocal Principal</p>
+            <div class="member-card__info">
+              <h3 class="member-card__name">Haylay Willians</h3>
+              <p class="member-card__role">Vocal Principal</p>
             </div>
-            <div class="member-description">
+            <div class="member-card__description">
               <p>Hayley Williams nasceu em 27 de dezembro de 1988, em Meridian, Mississippi. Ela é a vocalista principal e compositora do Paramore desde sua formação em 2004. Com sua voz poderosa e presença de palco carismática, Hayley se tornou um ícone do rock alternativo.</p>
               <p>Além de seu trabalho com o Paramore, ela também lançou projetos solo, incluindo os álbuns "Petals for Armor" (2020) e "FLOWERS for VASES/descansos" (2021).</p>
             </div>
-          </div>
+          </figure>
           
-          <div class="member-card">
-            <div class="member-img">
+          <figure class="member-card">
+            <div class="member-card__image-container">
               <img src="img\Members\Taylor York.jpg" alt="Taylor York">
             </div>
-            <div class="member-info">
-              <h3 class="member-name">Taylor York</h3>
-              <p class="member-role">Guitarrista</p>
+            <div class="member-card__info">
+              <h3 class="member-card__name">Taylor York</h3>
+              <p class="member-card__role">Guitarrista</p>
             </div>
-            <div class="member-description">
+            <div class="member-card__description">
               <p>Taylor York, nascido em 17 de dezembro de 1989, é o guitarrista do Paramore. Ele se juntou oficialmente à banda em 2009, mas já tocava como músico de apoio desde 2007. Taylor é conhecido por suas habilidades de composição e seus riffs distintivos.</p>
               <p>Ele tem sido uma parte fundamental na evolução do som da banda, contribuindo significativamente para a composição em álbuns como "Brand New Eyes", "Paramore", "After Laughter" e "This Is Why".</p>
             </div>
-          </div>
+          </figure>
           
-          <div class="member-card">
-            <div class="member-img">
+          <figure class="member-card">
+            <div class="member-card__image-container">
               <img src="img\Members\Zac Farro.jpg" alt="Zac Farro">
             </div>
-            <div class="member-info">
-              <h3 class="member-name">Zac Farro</h3>
-              <p class="member-role">Baterista</p>
+            <div class="member-card__info">
+              <h3 class="member-card__name">Zac Farro</h3>
+              <p class="member-card__role">Baterista</p>
             </div>
-            <div class="member-description">
+            <div class="member-card__description">
               <p>Zac Farro, nascido em 4 de junho de 1990, é o baterista do Paramore. Ele foi um dos membros fundadores da banda em 2004, saiu em 2010 e retornou em 2017. Seu estilo de bateria dinâmico e criativo é uma parte essencial do som do Paramore.</p>
               <p>Além do Paramore, Zac também tem seu próprio projeto musical chamado HalfNoise, onde atua como vocalista e multi-instrumentista.</p>
             </div>
-          </div>
+          </figure>
         </div>
       </section>
     </main>

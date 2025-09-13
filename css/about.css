@@ -3,7 +3,7 @@
     min-height: 100vh;
 }
 
-.section-title {
+.section__title {
     color: rgb(255, 100, 20);
     font-size: 1.9rem;
     font-weight: 700;
@@ -158,7 +158,7 @@
 }
 
 @media screen and (max-width: 480px) {
-    .section-title {
+    .section__title {
         font-size: 1.5rem;
     }
 
